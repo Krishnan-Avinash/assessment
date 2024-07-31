@@ -1,0 +1,104 @@
+.display-todo-container {
+  padding: 1.5rem 1rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .filters {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    .filters-left {
+      font-size: 1.35rem;
+      color: blue;
+      font-weight: 700;
+    }
+
+    .filters-right {
+      font-size: 1.15rem;
+      display: flex;
+      gap: 1.25rem;
+      .all-filter,
+      .open-filter,
+      .close-filter {
+        cursor: pointer;
+      }
+    }
+  }
+  .display-data {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    .individual-todo {
+      width: 80%;
+      background-color: #cecefd8e;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #cecefd8e;
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      outline: none;
+      .individual-todo-left {
+        .todo-name,
+        .todo-description,
+        .todo-createdAt,
+        .todo-updatedAt {
+          width: 100%;
+          font-size: 1rem;
+          font-weight: 400;
+        }
+      }
+      .individual-todo-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .edit-btn {
+        height: fit-content;
+        // background-color: red;
+        align-self: center;
+        padding: 0.5rem 1rem;
+        cursor: "pointer";
+      }
+    }
+  }
+  .edit-container {
+    width: 70%;
+    margin-top: 1rem;
+    // background-color: red;
+    h2 {
+      text-align: center;
+      color: blue;
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      input {
+        width: 70%;
+        padding: 0.5rem 1rem;
+      }
+      textarea {
+        width: 70%;
+        padding: 0.5rem 1rem;
+      }
+      .confirm {
+        display: flex;
+        gap: 1rem;
+        button {
+          padding: 0.5rem 1rem;
+          background-color: #cecefd8e;
+          color: blue;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

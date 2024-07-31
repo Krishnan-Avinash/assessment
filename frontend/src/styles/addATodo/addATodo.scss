@@ -1,0 +1,29 @@
+.add-a-todo-container {
+  .add-a-todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    input {
+      padding: 0.5rem 1rem;
+      width: 25rem;
+    }
+    textarea {
+      padding: 0.5rem 1rem;
+      width: 25rem;
+    }
+    .add-a-todo-button {
+      padding: 0.5rem 1rem;
+      outline: none;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1.05rem;
+      color: blue;
+      background-color: rgba(206, 206, 253, 0.557);
+      transition: all 0.1s linear;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
